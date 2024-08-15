@@ -6,7 +6,7 @@ show_directory() {
 
   index=$1
   icon=$(get_tmux_batch_option "@catppuccin_directory_icon" "")
-  color=$(get_tmux_batch_option "@catppuccin_directory_color" "$thm_pink")
+  color=$(get_tmux_batch_option "@catppuccin_directory_color" "$thm_blue")
   text=$(get_tmux_batch_option "@catppuccin_directory_text" "#{b:pane_current_path}")
 
   module=$(build_status_module "$index" "$icon" "$color" "$text")
